@@ -1,0 +1,88 @@
+<!-- <section>
+  <article>
+    <h3>Interpolação</h3>
+    <p>String renderizada com interpolação: {{ interpolation }}</p>
+    <p>Expresão 1 + 1 = {{ 1+1 }}</p>
+    <p>Expresão 1 + 1 não é {{ 1+1  + getValue()}}</p>
+    <p>Expresão 1 + 1 não é {{ 1+1  + getValue()}}</p>
+    <p>Expresão 1 + 1 não é {{ true && getLike()}}</p>
+  </article>
+
+  <article>
+    <h3>Property</h3>
+    <img src="{{ urlImage }}" />
+    <img [src]="urlImage " />
+  </article>
+
+  <article>
+    <h3>Class e style binding</h3>
+    <select #class (change)="0">
+      <option value="alert-success">Sucesso</option>
+      <option value="alert-info">Info</option>
+      <option value="alert-warning">Alerta</option>
+      <option value="alert-danger">Erro</option>
+    </select>
+    <br/>
+    <br/>
+
+<div class="alert {{ class.value }}" role="alert">
+  Texto colorido conforme combobox
+</div>
+
+  <div class="alert" role="alert"
+  [class.alert-success]="class.value == 'alert-success'">
+    Sucesso
+  </div>
+  <div class="alert" role="alert" [class.alert-info]="class.value == 'alert-info'">
+    Info
+  </div>
+  <div class="alert" role="alert" [class.alert-warning]="class.value == 'alert-warning'">
+    Alerta
+  </div>
+  <div class="alert" role="alert" [class.alert-danger]="class.value == 'alert-danger'">
+    Erro
+  </div>
+
+  <div class="alert alert-danger" role="alert"
+  [style.display] = "class.value == 'alert-danger' ? 'block': 'none'">
+    Só aparece quando 'Erro' for selecionado no box.
+  </div>
+
+  </article>
+
+</section> -->
+
+<!-- <section>
+  <article>
+    <h3>Event binding</h3>
+    <div>
+      <button (click)="clickButton()" class=" btn btn-primary">Clique!</button>
+        <br/><br/>
+
+      <input type="text" (keyup)="onKeyUp($event)" (keyup.enter)="saveValue($event.target)" (blur)="saveValue($event.target)" #fieldInput />
+      <p>Valor atual: {{currentValue}}</p>
+
+      <br/><br/>
+
+      <span (mouseover)="onMouseOverOut()"
+      (mouseout)="onMouseOverOut()"
+      [class.highlight]="isMouseOver"
+      >Passe o mouse!</span>
+
+    </div>
+
+
+  </article>
+</section> -->
+
+<!-- <app-form-example></app-form-example> -->
+
+ <section>
+  <article>
+    <h3>Input/Output properties</h3>
+
+    <app-course [name] = "courseName"></app-course>
+
+  </article>
+</section>
+
